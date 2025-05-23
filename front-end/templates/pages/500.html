@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 - Server Error | Your Blog Name</title>
+    <meta name="description" content="We're experiencing technical difficulties. Please try again later.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/500.html">
+    <meta property="og:title" content="500 - Server Error">
+    <meta property="og:description" content="We're experiencing technical difficulties. Please try again later.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/500.html">
+    <meta property="twitter:title" content="500 - Server Error">
+    <meta property="twitter:description" content="We're experiencing technical difficulties. Please try again later.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/error.css">
+</head>
+<body>
+    <div class="container">
+        <div class="error-page">
+            <h1>500</h1>
+            <h2>Server Error</h2>
+            <p>We're experiencing technical difficulties. Our team has been notified and is working to fix the issue. Please try again later.</p>
+            <a href="/" class="btn btn-primary">Return to Homepage</a>
+        </div>
+    </div>
+
+    <script>
+        // Log error to analytics
+        console.error('500 Server Error');
+        
+        // Report error to monitoring service
+        if (typeof window.errorReporting === 'function') {
+            window.errorReporting({
+                type: '500',
+                url: window.location.href,
+                timestamp: new Date().toISOString()
+            });
+        }
+    </script>
+</body>
+</html> 

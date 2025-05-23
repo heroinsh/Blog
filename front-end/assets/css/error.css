@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Error Pages Styles
+   ========================================================================== */
+
+.error-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-8);
+    text-align: center;
+}
+
+.error-page h1 {
+    font-size: var(--font-size-5xl);
+    color: var(--primary);
+    margin-bottom: var(--spacing-4);
+    font-weight: var(--font-weight-bold);
+}
+
+.error-page h2 {
+    font-size: var(--font-size-2xl);
+    color: var(--dark);
+    margin-bottom: var(--spacing-4);
+    font-weight: var(--font-weight-semibold);
+}
+
+.error-page p {
+    font-size: var(--font-size-lg);
+    color: var(--gray);
+    margin-bottom: var(--spacing-8);
+    max-width: 600px;
+}
+
+.error-page .btn {
+    padding: var(--spacing-3) var(--spacing-6);
+    font-size: var(--font-size-lg);
+    border-radius: var(--radius-lg);
+    transition: var(--transition-normal);
+}
+
+.error-page .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .error-page h1 {
+        font-size: var(--font-size-4xl);
+    }
+
+    .error-page h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .error-page p {
+        font-size: var(--font-size-base);
+    }
+} 
